@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+  </head>
+  <body>
+    <h1> Purchase List Generator</h1>
+    <form method="get" action="<?= returnUrl ?>">
+    <p> 発注先: 
+    <input type="radio" name="supplier" value="digikey" checked="checked" /> Digikey　
+    <input type="radio" name="supplier" value="mouser" /> Mouser
+    </p>
+    <p> <label>発注番号: <input type="text" name="orderNumber"></label> </p>
+    <p> <input type="submit" value="Generate"> </p>
+    </form>
+    <h1> Purchase List Summarizer</h1>
+    <form method="get" action="<?= returnUrl ?>">
+    <input type="hidden" name="submit" value="summarize">
+    <p> <input type="submit" value="Summarize"> </p>
+    </form>
+
+</body>
+</html>
+
+
